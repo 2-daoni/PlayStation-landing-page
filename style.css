@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.logo img {
+  width: 70px;
+  margin-left: 100px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+}
+
+.menu li {
+  padding: 15px;
+}
+
+.menu li a {
+  color: #000;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.text-container {
+  margin-left: 100px;
+}
+
+.bar {
+  content: '';
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#ff54a2, #ff575a);
+
+  position: relative;
+  top: 17px;
+  left: 90px;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.text-container .subtitle {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  color: gray;
+  margin: 0;
+}
+
+.text-container p {
+  color: lightgray;
+}
+
+.text-container button {
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #fb5283, #ff3527);
+  width: 130px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.text-container button a {
+  color: #fff;
+}
+
+button img {
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 300px;
+}
+
+.controller {
+  position: relative;
+  right: -300px;
+}
+
+.controller img {
+  width: 700px;
+}
+
+.add {
+  width: 1000px;
+  background: linear-gradient(#ff54a2, #ff575a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.add img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.footer .sci {
+  margin-top: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .sci li:first-child img {
+  width: 9px;
+}
+
+.footer .sci li:nth-child(2) img {
+  width: 21px;
+}
+
+.footer .sci a {
+  margin: 20px;
+}
