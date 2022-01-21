@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   overflow: hidden;
+  width: 100%;
 }
 
 ul {
@@ -25,6 +26,12 @@ a {
 .logo img {
   width: 70px;
   margin-left: 100px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
 }
 
 .menu ul {
@@ -40,6 +47,11 @@ a {
 .menu li a {
   color: #000;
   font-weight: 700;
+}
+
+.menu img {
+  display: none;
+  width: 30px;
 }
 
 .main {
@@ -58,7 +70,6 @@ a {
   width: 10px;
   height: 200px;
   background: linear-gradient(#ff54a2, #ff575a);
-
   position: relative;
   top: 17px;
   left: 90px;
@@ -88,6 +99,7 @@ a {
   width: 130px;
   height: 35px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .text-container button a {
@@ -96,10 +108,18 @@ a {
 
 button img {
   display: none;
+  width: 40px;
 }
 
 button:hover img {
   display: block;
+}
+
+button:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
 }
 
 .main-container {
@@ -111,7 +131,7 @@ button:hover img {
 
 .controller {
   position: relative;
-  right: -300px;
+  right: -360px;
 }
 
 .controller img {
